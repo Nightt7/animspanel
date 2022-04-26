@@ -4,7 +4,7 @@ game 'gta5'
 
 lua54 'yes'
 
-description 'A simple NUI animations panel developed by Bombay || Modified by Nightt#8899'
+description 'Bombays animspanel modified by Nightt#8899'
 
 version '1.2.0'
 

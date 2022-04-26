@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Boxed";
-    src: url('../fonts/bankgothic.ttf');
+    src: url('../fonts/BoxedRound.ttf');
     font-display: swap;
 }
 
@@ -28,11 +28,11 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    width: 4em;
+    width: 3em;
     height: 35em;
     margin-right: 0.5%;
     margin-bottom: -2%;
-    border-radius: 0.2vh;
+    border-radius: 0.9vh;
     background: #000000;
     box-shadow: 0px 0px 8px 5px #0000009e;
 }
@@ -51,7 +51,7 @@ body {
     flex-direction: column;
     width: 60em;
     height: 40em;
-    border-radius: 20vh;
+    border-radius: 50vh;
 }
 
 .settings-container {
@@ -141,6 +141,40 @@ body {
     width: 100%;
 }
 
+.info-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: flex-end;
+    flex-direction: column;
+    width: 18.2em;
+    height: 4em;
+
+    margin-right: 5%;
+    top: -4.5em;
+
+    background: #000000cc;
+    border-radius: 0.6vh;
+    text-align: center;
+}
+
+.info-container span {
+    font-size: 2.2vh;
+    color: #FFFFFF;
+    font-family: "Rubik Medium";
+    margin-left: 5%;
+    margin-right: 5%;
+    text-transform: capitalize;
+}
+
+.info-container span:last-of-type {
+    font-size: 1.8vh;
+    color: #C1C1C1;
+    font-family: "Rubik Light";
+    text-transform: none;
+}
+
 .navbar div {
     position: relative;
     display: flex;
@@ -157,7 +191,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 1.5%;
+    margin-bottom: -135%;
+    margin-left: -13.5%;
     width: 2.5em;
     height: 2.5em;
     background-color: #000000;
@@ -182,7 +217,7 @@ body {
     border-bottom: 0.15vh solid rgb(255, 255, 255);
     outline: none;
     width: 70%;
-    margin-left: -28.5%;
+    margin-left: -28%;
     margin-bottom: -5.5%;
 }
 
@@ -203,17 +238,17 @@ body {
 }
 
 .anims-block::-webkit-scrollbar-track {
-    background-color: rgb(0, 0, 0);
+    background-color: #555;
     border-radius: 1.6vh;
 }
 
 .anims-block::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0);
+    background: rgb(141, 141, 141);
     border-radius: 1.6vh;
 }
 
 .anims-block::-webkit-scrollbar-thumb:hover {
-    background: #000000;
+    background: #a7a7a7;
 }
 
 .anim {
@@ -224,10 +259,10 @@ body {
     width: 24%;
     height: 5.5em;
     margin: 0.50%;
-    border-radius: 0.10vh;
+    border-radius: 0.20vh;
     font-size: 11px;
-
-    background: rgb(0, 0, 0);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 23%, rgba(0,0,0,0) 93%);
     cursor: pointer;
     transition: 0.2s;
     overflow: hidden;
@@ -365,11 +400,11 @@ body {
         max-height: 2.9em;
     }
     .anim div span:first-of-type {
-        font-size: 0.4em;
+        font-size: 0.8em;
     }
 
     .anim div span:last-of-type {
-        font-size: 0.325em;
+        font-size: 0.525em;
     }
     .navbar div {
         max-width: 60%;
@@ -379,12 +414,12 @@ body {
         font-size: 1.2em
     }
     .search-bar {
-        font-size: 0.2em;
-        max-width: 50%;
+        font-size: 0.8em;
+        max-width: 80%;
     }
     .controls {
-        max-width: 1.7em;
-        max-height: 1.7em;
+        max-width: 1.4em;
+        max-height: 1.4em;
     }
 }
 
@@ -396,7 +431,7 @@ body {
         margin-right: 0.4em;
     }
     .info-container span {
-        font-size: 0.5em;
+        font-size: 0.9em;
         margin-right: 0.2em;
         margin-left: 0.2em;
     }
@@ -433,11 +468,11 @@ body {
         max-height: 4em;
     }
     .anim div span:first-of-type {
-        font-size: 0.8em;
+        font-size: 1.0em;
     }
 
     .anim div span:last-of-type {
-        font-size: 0.455em;
+        font-size: 0.655em;
     }
     .navbar div {
         max-width: 60%;

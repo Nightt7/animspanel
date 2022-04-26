@@ -95,7 +95,6 @@ RegisterNUICallback('exitPanel', function(_, cb)
     if cfg.panelStatus then
         cfg.panelStatus = false
         SetNuiFocus(false, false)
-        TriggerScreenblurFadeOut(0)
         SendNUIMessage({action = 'panelStatus', panelStatus = cfg.panelStatus})
     end
     cb({})
@@ -152,7 +151,6 @@ end)
 RegisterCommand(cfg.commandName, function()
     cfg.panelStatus = not cfg.panelStatus
     SetNuiFocus(true, true)
-    TriggerScreenblurFadeIn(0)
     SendNUIMessage({action = 'panelStatus',panelStatus = cfg.panelStatus})
 end)
 

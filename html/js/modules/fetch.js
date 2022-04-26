@@ -79,7 +79,7 @@ export const createPanels = (panelData) => {
                 } else {
                     favs.push(block.id)
                     localStorage.setItem('favoriteAnims', JSON.stringify(favs))
-                    e.target.style.color = '#FBB13C';
+                    e.target.style.color = '#898989';
                     block.classList.add('favorite');
                 }
             });
@@ -114,7 +114,7 @@ export const createPanels = (panelData) => {
         for (let x = 0; x < favorites.length; x++) {
             if (anims[i].id == favorites[x]) {
                 anims[i].classList.add('favorite');
-                anims[i].getElementsByTagName("span")[2].style.color = '#FBB13C';
+                anims[i].getElementsByTagName("span")[2].style.color = '#898989';
             }
         }
     }
